@@ -2,7 +2,7 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "evermore",
   "main": "worker/index.ts",
-  "compatibility_date": "2026-11-20",
+  "compatibility_date": "2026-11-21,
   "compatibility_flags": ["nodejs_compat"],
   "assets": {
     "directory": "./public",
@@ -13,12 +13,12 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "REPLACE_WITH_D1_NAME",
-      "database_id": "REPLACE_WITH_D1_ID",
+      "database_name": "evermore-db",
+      "database_id": "37c69fab-fa75-4dc3-90a6-2fa0744fd380",
     },
   ],
   "r2_buckets": [
-    { "binding": "MEDIA", "bucket_name": "replace-with-r2-bucket-name" },
+    { "binding": "MEDIA", "bucket_name": "evermore-media" },
   ],
   "triggers": { "crons": ["17 * * * *"] },
   "observability": { "enabled": true, "logs": { "invocation_logs": false } },
